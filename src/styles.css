@@ -1,0 +1,40 @@
+/* Smart Coffee Brasil - Global Styles */
+
+body {
+  font-family: 'Work Sans', system-ui, sans-serif;
+  background-color: #fff8f5;
+  color: #231a13;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.active-dot {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(247, 189, 72, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(247, 189, 72, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(247, 189, 72, 0); }
+}
+
+.stepper-line {
+  background: repeating-linear-gradient(to right, #d2c3bf 0px, #d2c3bf 4px, transparent 4px, transparent 8px);
+}
+
+.stepper-line-active {
+  background: #f7bd48 !important;
+}
+
+/* Hover card lift */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(19, 8, 5, 0.08);
+}
